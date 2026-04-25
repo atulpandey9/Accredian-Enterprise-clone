@@ -21,7 +21,7 @@ export default function LeadModal({ isOpen, onClose }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("loading");
-    
+
     try {
       const response = await fetch('/api/leads', {
         method: 'POST',
@@ -30,7 +30,7 @@ export default function LeadModal({ isOpen, onClose }) {
         },
         body: JSON.stringify(formData),
       });
-      
+
       if (response.ok) {
         setStatus("success");
         setTimeout(() => {
@@ -51,12 +51,12 @@ export default function LeadModal({ isOpen, onClose }) {
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
       <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={onClose}></div>
       <div className="bg-white rounded-2xl shadow-2xl w-full max-w-4xl flex overflow-hidden relative z-10 animate-in fade-in zoom-in duration-300">
-        
+
         {/* Left Side: Image */}
         <div className="hidden md:block w-5/12 bg-blue-50 relative">
-          <img 
-            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-            alt="Consulting" 
+          <img
+            src="https://storage.googleapis.com/accredian-assets/Frontend_Assests/Images/Accredian-react-site-images/other/business-v2.webp"
+            alt="Consulting"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-primary/20 backdrop-blur-[2px]"></div>
@@ -68,7 +68,7 @@ export default function LeadModal({ isOpen, onClose }) {
 
         {/* Right Side: Form */}
         <div className="w-full md:w-7/12 p-8 md:p-12 relative h-[80vh] overflow-y-auto">
-          <button 
+          <button
             onClick={onClose}
             className="absolute top-6 right-6 text-gray-400 hover:text-gray-900 transition-colors bg-gray-100 hover:bg-gray-200 rounded-full p-2 cursor-pointer"
           >
@@ -91,7 +91,7 @@ export default function LeadModal({ isOpen, onClose }) {
                   <label className="block text-sm font-bold text-gray-700 mb-1">Full Name</label>
                   <input required type="text" name="name" value={formData.name} onChange={handleChange} className="w-full border-b-2 border-gray-200 focus:border-primary outline-none py-2 transition-colors" placeholder="John Doe" />
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div>
                     <label className="block text-sm font-bold text-gray-700 mb-1">Email Address</label>
@@ -130,8 +130,8 @@ export default function LeadModal({ isOpen, onClose }) {
                   </div>
                 </div>
 
-                <button 
-                  type="submit" 
+                <button
+                  type="submit"
                   disabled={status === "loading"}
                   className="w-full bg-primary hover:bg-primary-hover text-white py-4 rounded-lg font-bold text-lg transition-colors mt-8 flex justify-center items-center cursor-pointer disabled:opacity-70"
                 >

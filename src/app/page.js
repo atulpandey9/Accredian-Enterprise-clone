@@ -8,6 +8,10 @@ import Partnerships from "@/components/Partnerships";
 import AccredianEdge from "@/components/AccredianEdge";
 import DomainExpertise from "@/components/DomainExpertise";
 import CourseSegmentation from "@/components/CourseSegmentation";
+import StrategicSkill from "@/components/StrategicSkill";
+import CatFramework from "@/components/CatFramework";
+import HowItWorks from "@/components/HowItWorks";
+import Faqs from "@/components/Faqs";
 import Footer from "@/components/Footer";
 import LeadModal from "@/components/LeadModal";
 
@@ -27,6 +31,10 @@ export default function Home() {
         <AccredianEdge />
         <DomainExpertise />
         <CourseSegmentation />
+        <StrategicSkill />
+        <CatFramework />
+        <HowItWorks />
+        <Faqs onOpenModal={openModal} />
       </main>
       <Footer onOpenModal={openModal} />
       <LeadModal isOpen={isModalOpen} onClose={closeModal} />

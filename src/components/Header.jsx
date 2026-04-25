@@ -15,6 +15,8 @@ export default function Header({ onOpenModal }) {
             <a href="#stats" className="text-gray-600 hover:text-primary transition-colors font-medium">Stats</a>
             <a href="#clients" className="text-gray-600 hover:text-primary transition-colors font-medium">Clients</a>
             <a href="#accredian-edge" className="text-gray-600 hover:text-primary transition-colors font-medium">Accredian Edge</a>
+            <a href="#cat" className="text-gray-600 hover:text-primary transition-colors font-medium">CAT</a>
+            <a href="#howitworks" className="text-gray-600 hover:text-primary transition-colors font-medium">How It Works</a>
             <a href="#faqs" className="text-gray-600 hover:text-primary transition-colors font-medium">FAQs</a>
           </nav>
           <div className="flex items-center space-x-4">

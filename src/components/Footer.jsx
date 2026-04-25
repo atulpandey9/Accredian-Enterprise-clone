@@ -2,7 +2,7 @@ import { Hash, MessageCircle, Link2, Image as ImageIcon, Video } from "lucide-re
 
 export default function Footer({ onOpenModal }) {
   return (
-    <footer id="faqs" className="bg-[#1A1A1A] text-white py-16">
+    <footer className="bg-[#1A1A1A] text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-gray-800 pb-12 mb-12">
           <div>

@@ -11,7 +11,7 @@ export default function Partnerships() {
 
         {/* Placeholder for Logos - doing a static flex layout */}
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-          <div className="text-2xl font-bold text-gray-800 tracking-wider">Reliance</div>
+          <div className="text-2xl font-bold text-gray-800 tracking-wider"> <img src="" alt="" />Reliance</div>
           <div className="text-2xl font-black text-blue-800 italic">HCL</div>
           <div className="text-3xl font-bold text-blue-600 tracking-widest">IBM</div>
           <div className="text-2xl font-bold text-gray-700">CRIF</div>
