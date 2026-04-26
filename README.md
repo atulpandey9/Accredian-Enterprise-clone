@@ -1,10 +1,10 @@
 # Accedian Enterprise Landing Page Clone
 
 ## Live Demo
-Vercel Link: your-live-link
+Vercel Link: https://accredian-enterprise-clone-swart.vercel.app/
 
 ## GitHub Repository
-GitHub Link: your-github-link
+GitHub Link: https://github.com/atulpandey9/Accredian-Enterprise-clone
 
 ## Project Overview
 
