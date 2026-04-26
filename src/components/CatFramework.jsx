@@ -9,11 +9,11 @@ export default function CatFramework() {
           Our Proven Approach to <span className="text-[#1A73E8]">Learning Excellence</span>
         </p>
 
-        <div className="flex justify-center items-center overflow-x-auto pb-4">
+        <div className="flex justify-center items-center pb-4">
           <img
             src="https://storage.googleapis.com/accredian-assets/Frontend_Assests/Images/Accredian-react-site-images/other/catV2.svg"
             alt="The CAT Framework"
-            className="max-w-full h-auto min-w-[800px]"
+            className="w-full h-auto min-[795px]:min-w-[800px] min-[795px]:max-w-full max-w-[600px] mx-auto"
           />
         </div>
       </div>

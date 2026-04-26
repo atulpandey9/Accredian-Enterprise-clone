@@ -4,9 +4,10 @@ export default function Hero({ onOpenModal }) {
   return (
     <section id="home" className="relative bg-[#F0F7FF] py-20 lg:py-28 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+        <div className="flex flex-col min-[1005px]:grid min-[1005px]:grid-cols-2 gap-12 items-center">
 
-          <div className="max-w-2xl">
+          {/* Text Content */}
+          <div className="max-w-2xl order-2 min-[1005px]:order-1 mt-8 min-[1005px]:mt-0">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
               Next-Gen <span className="text-primary">Expertise</span><br />
               For Your <span className="text-primary">Enterprise</span>
@@ -32,13 +33,14 @@ export default function Hero({ onOpenModal }) {
             </button>
           </div>
 
-          <div className="mt-16 lg:mt-0 relative hidden md:block">
+          {/* Image Content */}
+          <div className="relative order-1 min-[1005px]:order-2 w-full max-w-lg mx-auto min-[1005px]:max-w-none">
             {/* Aesthetic card shape background */}
             <div className="absolute inset-0 bg-blue-100 rounded-3xl transform rotate-3 scale-105"></div>
             <img
               src="https://storage.googleapis.com/accredian-assets/Frontend_Assests/Images/Accredian-react-site-images/other/corporate-big-hero-v4.webp"
               alt="Professionals working"
-              className="relative rounded-3xl shadow-2xl object-cover h-[500px] w-full border-4 border-white"
+              className="relative rounded-3xl shadow-2xl object-cover h-[350px] sm:h-[400px] min-[1005px]:h-[500px] w-full border-4 border-white"
             />
           </div>
 

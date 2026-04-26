@@ -16,6 +16,7 @@ import Footer from "@/components/Footer";
 import LeadModal from "@/components/LeadModal";
 import Testimonials from "@/components/Testimonials";
 import ContactBanner from "@/components/ContactBanner";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -26,21 +27,21 @@ export default function Home() {
   return (
     <>
       <Header onOpenModal={openModal} />
-      <main className="flex-grow w-full">
+      <main className="flex-grow w-full overflow-hidden">
         <Hero onOpenModal={openModal} />
-        <Stats />
-        <Partnerships />
-        <AccredianEdge />
-        <DomainExpertise />
-        <CourseSegmentation />
-        <StrategicSkill />
-        <CatFramework />
-        <HowItWorks />
-        <Faqs onOpenModal={openModal} />
-        <Testimonials />
-        <ContactBanner onOpenModal={openModal} />
+        <ScrollReveal><Stats /></ScrollReveal>
+        <ScrollReveal><Partnerships /></ScrollReveal>
+        <ScrollReveal><AccredianEdge /></ScrollReveal>
+        <ScrollReveal><DomainExpertise /></ScrollReveal>
+        <ScrollReveal><CourseSegmentation /></ScrollReveal>
+        <ScrollReveal><StrategicSkill /></ScrollReveal>
+        <ScrollReveal><CatFramework /></ScrollReveal>
+        <ScrollReveal><HowItWorks /></ScrollReveal>
+        <ScrollReveal><Faqs onOpenModal={openModal} /></ScrollReveal>
+        <ScrollReveal><Testimonials /></ScrollReveal>
+        <ScrollReveal><ContactBanner onOpenModal={openModal} /></ScrollReveal>
       </main>
-      <Footer onOpenModal={openModal} />
+      <ScrollReveal><Footer onOpenModal={openModal} /></ScrollReveal>
       <LeadModal isOpen={isModalOpen} onClose={closeModal} />
     </>
   );
