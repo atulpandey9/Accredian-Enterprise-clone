@@ -33,15 +33,14 @@ export default function LeadModal({ isOpen, onClose }) {
         body: JSON.stringify(formData),
       });
 
-      // Even if API doesn't exist, simulate a success for UI purposes 
-      // if (response.ok) 
+
       setStatus("success");
       setTimeout(() => {
         onClose();
         setStatus("idle");
         setFormData({ name: "", email: "", phone: "", company: "", domain: "", candidates: "", delivery: "", location: "" });
       }, 3000);
-      
+
     } catch (error) {
       console.error(error);
       setStatus("error");
@@ -53,7 +52,7 @@ export default function LeadModal({ isOpen, onClose }) {
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={onClose}></div>
       <div className="bg-white rounded-xl shadow-2xl w-full max-w-4xl flex relative z-10 animate-in fade-in zoom-in duration-300">
 
-        {/* Left Side: Image */}
+
         <div className="hidden md:block w-[45%] relative">
           <img
             src="https://storage.googleapis.com/accredian-assets/Frontend_Assests/Images/Accredian-react-site-images/other/business-v2.webp"
@@ -62,7 +61,6 @@ export default function LeadModal({ isOpen, onClose }) {
           />
         </div>
 
-        {/* Right Side: Form */}
         <div className="w-full md:w-[55%] p-8 md:p-10 relative flex flex-col justify-center max-h-[90vh] overflow-y-auto">
           <button
             onClick={onClose}
@@ -82,11 +80,11 @@ export default function LeadModal({ isOpen, onClose }) {
               <h2 className="text-[24px] font-bold text-[#1a202c] mb-8">Enquire Now</h2>
 
               <form onSubmit={handleSubmit} className="space-y-6">
-                
+
                 <div>
                   <input required type="text" name="name" value={formData.name} onChange={handleChange} className="w-full border-b border-gray-300 focus:border-[#1A73E8] outline-none pb-2 text-[15px] text-gray-800 placeholder-gray-400 transition-colors bg-transparent" placeholder="Enter Name" />
                 </div>
-                
+
                 <div>
                   <input required type="email" name="email" value={formData.email} onChange={handleChange} className="w-full border-b border-gray-300 focus:border-[#1A73E8] outline-none pb-2 text-[15px] text-gray-800 placeholder-gray-400 transition-colors bg-transparent" placeholder="Enter Email" />
                 </div>

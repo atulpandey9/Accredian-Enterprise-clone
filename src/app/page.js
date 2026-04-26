@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <>
       <Header onOpenModal={openModal} />
-      <main className="flex-grow w-full overflow-hidden">
+      <main className="flex-grow w-full overflow-x-hidden">
         <Hero onOpenModal={openModal} />
         <ScrollReveal><Stats /></ScrollReveal>
         <ScrollReveal><Partnerships /></ScrollReveal>

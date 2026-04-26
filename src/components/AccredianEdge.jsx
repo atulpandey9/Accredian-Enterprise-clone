@@ -10,13 +10,13 @@ export default function AccredianEdge() {
         </p>
 
         <div className="flex justify-center items-center pb-4">
-          {/* Desktop Image */}
+
           <img
             src="https://storage.googleapis.com/accredian-assets/Frontend_Assests/Images/Accredian-react-site-images/other/accredian-edge-usp-v3.svg"
             alt="Accredian Edge"
             className="max-w-full h-auto min-w-[800px] hidden min-[791px]:block"
           />
-          {/* Mobile Image */}
+
           <img
             src="https://storage.googleapis.com/accredian-assets/Frontend_Assests/Images/Accredian-react-site-images/other/accredian-edge-usp-mobile.svg"
             alt="Accredian Edge Mobile"

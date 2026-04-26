@@ -19,7 +19,7 @@ export default function Partnerships() {
           animation: marquee 20s linear infinite;
         }
       `}</style>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
           Our Proven <span className="text-primary">Partnerships</span>
@@ -28,7 +28,7 @@ export default function Partnerships() {
           Successful Collaborations With the <span className="text-primary/80">Industry's Best</span>
         </p>
 
-        {/* Desktop Logos Grid (> 770px) */}
+
         <div className="hidden min-[771px]:grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 md:gap-12 items-center justify-items-center">
           {logos.map((logo, idx) => (
             <div key={idx} className="flex justify-center items-center w-full h-12 md:h-16">

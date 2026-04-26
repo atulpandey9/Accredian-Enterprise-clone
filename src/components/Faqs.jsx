@@ -7,7 +7,7 @@ export default function Faqs({ onOpenModal }) {
   const [activeTab, setActiveTab] = useState("About the Course");
   const [openId, setOpenId] = useState(1);
 
-  // You can fill in the rest of the dropdowns here
+
   const faqData = {
     "About the Course": [
       {
@@ -61,14 +61,14 @@ export default function Faqs({ onOpenModal }) {
     <section id="faqs" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Title */}
+
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-16 text-center md:text-left">
           Frequently Asked <span className="text-primary">Questions</span>
         </h2>
 
         <div className="flex flex-col md:flex-row gap-12">
 
-          {/* Left Side: Tabs */}
+
           <div className="md:w-1/3 flex flex-col gap-4">
             {Object.keys(faqData).map((tab) => (
               <button
@@ -84,7 +84,7 @@ export default function Faqs({ onOpenModal }) {
             ))}
           </div>
 
-          {/* Right Side: Accordion Questions */}
+
           <div className="md:w-2/3">
             <div className="flex flex-col gap-4">
               {faqData[activeTab].map((faq) => (
@@ -103,11 +103,10 @@ export default function Faqs({ onOpenModal }) {
                     )}
                   </button>
 
-                  {/* Dropdown Answer Content */}
+
                   <div
-                    className={`grid transition-all duration-300 ease-in-out ${
-                      openId === faq.id ? "grid-rows-[1fr] opacity-100 mt-2" : "grid-rows-[0fr] opacity-0"
-                    }`}
+                    className={`grid transition-all duration-300 ease-in-out ${openId === faq.id ? "grid-rows-[1fr] opacity-100 mt-2" : "grid-rows-[0fr] opacity-0"
+                      }`}
                   >
                     <div className="overflow-hidden">
                       <div className="pb-4 text-gray-600 leading-relaxed pr-8">
@@ -122,7 +121,7 @@ export default function Faqs({ onOpenModal }) {
 
         </div>
 
-        {/* Enquire Now Button bottom centered */}
+
         <div className="mt-16 text-center">
           <button
             onClick={onOpenModal}

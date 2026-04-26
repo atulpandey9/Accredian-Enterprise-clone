@@ -28,8 +28,8 @@ export default function StrategicSkill() {
     <section className="py-20 bg-white">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-[#1A73E8] rounded-[32px] overflow-hidden flex flex-col lg:flex-row relative shadow-xl">
-          
-          {/* Left Side: Title and Image */}
+
+
           <div className="lg:w-5/12 p-10 lg:p-14 pb-0 lg:pb-0 flex flex-col justify-between relative z-10">
             <div>
               <p className="text-white/90 text-xl font-medium mb-2">Who Should Join?</p>
@@ -37,17 +37,17 @@ export default function StrategicSkill() {
                 Strategic Skill <br /> Enhancement
               </h2>
             </div>
-            
+
             <div className="mt-auto -ml-4 flex items-end">
-              <img 
-                src="https://storage.googleapis.com/accredian-assets/Frontend_Assests/Images/Accredian-react-site-images/other/imagehuman.png" 
-                alt="Professionals" 
+              <img
+                src="https://storage.googleapis.com/accredian-assets/Frontend_Assests/Images/Accredian-react-site-images/other/imagehuman.png"
+                alt="Professionals"
                 className="w-full max-w-[400px] h-auto object-contain object-bottom"
               />
             </div>
           </div>
 
-          {/* Right Side: Grid */}
+
           <div className="lg:w-7/12 p-10 lg:p-16 lg:pl-10 grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-16 mt-8 lg:mt-0 relative z-10 self-center">
             {segments.map((segment, idx) => (
               <div key={idx} className="flex flex-col">
@@ -59,7 +59,7 @@ export default function StrategicSkill() {
               </div>
             ))}
           </div>
-          
+
         </div>
       </div>
     </section>
