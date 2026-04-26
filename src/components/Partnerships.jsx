@@ -9,14 +9,14 @@ export default function Partnerships() {
           Successful Collaborations With the <span className="text-primary/80">Industry's Best</span>
         </p>
 
-        {/* Placeholder for Logos - doing a static flex layout */}
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-          <div className="text-2xl font-bold text-gray-800 tracking-wider"> <img src="" alt="" />Reliance</div>
-          <div className="text-2xl font-black text-blue-800 italic">HCL</div>
-          <div className="text-3xl font-bold text-blue-600 tracking-widest">IBM</div>
-          <div className="text-2xl font-bold text-gray-700">CRIF</div>
-          <div className="text-3xl text-red-600 font-bold uppercase track">ADP</div>
-          <div className="w-16 h-16 rounded-full border-4 border-green-600 flex items-center justify-center font-bold text-green-700 text-xs text-center leading-none">BAYER</div>
+        {/* Logos Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 md:gap-12 items-center justify-items-center">
+          <div className="flex justify-center items-center w-full h-12 md:h-16"><img src="https://storage.googleapis.com/accredian-assets/Frontend_Assests/Images/Accredian-react-site-images/other/rel.png" alt="Reliance" className="max-h-full max-w-full object-contain" /></div>
+          <div className="flex justify-center items-center w-full h-12 md:h-16"><img src="https://storage.googleapis.com/accredian-assets/Frontend_Assests/Images/Accredian-react-site-images/other/hcl.png" alt="HCL" className="max-h-full max-w-full object-contain" /></div>
+          <div className="flex justify-center items-center w-full h-12 md:h-16"><img src="https://storage.googleapis.com/accredian-assets/Frontend_Assests/Images/Accredian-react-site-images/other/ibm.png" alt="IBM" className="max-h-full max-w-full object-contain" /></div>
+          <div className="flex justify-center items-center w-full h-12 md:h-16"><img src="https://storage.googleapis.com/accredian-assets/Frontend_Assests/Images/Accredian-react-site-images/other/crif.png" alt="CRIF" className="max-h-full max-w-full object-contain" /></div>
+          <div className="flex justify-center items-center w-full h-12 md:h-16"><img src="https://storage.googleapis.com/accredian-assets/Frontend_Assests/Images/Accredian-react-site-images/other/adp.svg" alt="ADP" className="max-h-full max-w-full object-contain" /></div>
+          <div className="flex justify-center items-center w-full h-12 md:h-16"><img src="https://storage.googleapis.com/accredian-assets/Frontend_Assests/Images/Accredian-react-site-images/other/bayer.svg" alt="BAYER" className="max-h-full max-w-full object-contain" /></div>
         </div>
       </div>
     </section>

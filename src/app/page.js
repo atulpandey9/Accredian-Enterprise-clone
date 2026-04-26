@@ -14,6 +14,8 @@ import HowItWorks from "@/components/HowItWorks";
 import Faqs from "@/components/Faqs";
 import Footer from "@/components/Footer";
 import LeadModal from "@/components/LeadModal";
+import Testimonials from "@/components/Testimonials";
+import ContactBanner from "@/components/ContactBanner";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -35,6 +37,8 @@ export default function Home() {
         <CatFramework />
         <HowItWorks />
         <Faqs onOpenModal={openModal} />
+        <Testimonials />
+        <ContactBanner onOpenModal={openModal} />
       </main>
       <Footer onOpenModal={openModal} />
       <LeadModal isOpen={isModalOpen} onClose={closeModal} />
